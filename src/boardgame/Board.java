@@ -31,5 +31,12 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	// Métodos Específicos
+	public Piece piece (int rows, int column) {
+		return pieces[rows][column];
+	}
 
+	public Piece piece (Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 }
